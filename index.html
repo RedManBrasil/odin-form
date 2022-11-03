@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="image-section">
+        <p class="logo-text">Pedro's Bike Shop</p>
+    </div>
+    <div class="page-section">
+        <div class="title-section">
+            <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now to get started.</p>
+            <p> </p>
+            <p>You know you want to.</p>
+            </div>
+        <div class="form-section">
+            
+            <form id="commentform" class="comment-form">
+                <div class="upper-section">
+                      <div class="comment-form-name input">
+                        <label for="name">First Name</label>
+                        <input id="name" name="name" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+                      </div>
+                      <div class="comment-form-surname input">
+                        <label for="name">Last Name</label>
+                        <input id="surname" name="surname" type="text" value="" size="30" maxlength="245" required>
+                      </div>
+                      <div class="comment-form-email input">
+                        <label for="name">Email</label>
+                        <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
+                      </div>
+                      <div class="comment-form-url input">
+                        <label for="name">Phone Number</label>
+                        <input id="url" name="url" type="tel" value="" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" size="30" maxlength="200">
+                      </div>
+                      <div class="comment-form-password input">
+                        <label for="name">Password</label>
+                        <input id="password" name="password" type="password" value="" size="30" maxlength="200" autocomplete="on" required>
+                      </div>
+                      <div class="comment-form-confirm-password input">
+                        <label for="name">Confirm Password</label>
+                        <input id="confirm-password" name="password" type="password" value="" size="30" maxlength="200" autocomplete="on" required>
+                      </div>
+                </div>
+                <div class="footer-section">
+                    <button type="submit" class="simple">Create Account</button>
+                    <p>Already have an account? <a href="#">Log In</a></p>
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
